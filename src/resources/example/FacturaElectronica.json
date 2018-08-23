@@ -1,0 +1,472 @@
+{
+    "FacturaElectronica":{ 
+        "Documento":{"Tipo":"01","Numero":"87"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"000114050239" }}, 
+        "Receptor":{ 
+            "Nombre":"ASDFASDF", 
+            "Identificacion":{ "Tipo":"02", "Numero":"3105685003" }, 
+            "NombreComercial":"BurgerKing", 
+            "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, 
+            "Telefono":{
+                "CodigoPais":"506",
+                "NumTelefono":"87654321"
+            } 
+        }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1",
+                    "Mercancia":1,
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"Serv Prof ", 
+                    "PrecioUnitario":"5.500",
+                    "Impuesto":[
+                        { 
+                            "Codigo":"01", 
+                            "Tarifa":"13", 
+                            "Exoneracion":[{
+                                "TipoDocumento":"03",
+                                "NumeroDocumento":"1201",
+                                "NombreInstitucion":"Esc. Figueres Ferrer",
+                                "FechaEmision":"2018-07-15T06:45:08-06:00",
+                                "PorcentajeCompra":50
+                            }]
+                        }
+                    ]
+                },
+                { 
+                    "NumeroLinea":"2",
+                    "Mercancia":1,
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"Serv Prof ", 
+                    "PrecioUnitario":"5.500",
+                    "Impuesto":[
+                        { 
+                            "Codigo":"01", 
+                            "Tarifa":"13", 
+                            "Exoneracion":[{
+                                "TipoDocumento":"03",
+                                "NumeroDocumento":"1201",
+                                "NombreInstitucion":"Esc. Figueres Ferrer",
+                                "FechaEmision":"2018-07-15T06:45:08-06:00",
+                                "PorcentajeCompra":100
+                            }]
+                        },
+                        { 
+                            "Codigo":"02", 
+                            "Tarifa":"2", 
+                            "Exoneracion":[{
+                                "TipoDocumento":"03",
+                                "NumeroDocumento":"1201",
+                                "NombreInstitucion":"Esc. Figueres Ferrer",
+                                "FechaEmision":"2018-07-15T06:45:08-06:00",
+                                "PorcentajeCompra":100
+                            }]
+                        }                    ]
+                },
+                { 
+                    "NumeroLinea":"3",
+                    "Mercancia":1,
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"Serv Prof ", 
+                    "PrecioUnitario":"5.500"
+                }
+            ]
+        }, 
+        "ResumenFactura":{}
+    },
+    "FacturaElectronica2":{ 
+        "Documento":{"Tipo":"01","Numero":"12"},
+        "Agencia":"001",
+        "Terminal":"00002", 
+        "Emisor":{ "Identificacion":{ "Tipo":"02", "Numero":"3105685003" }}, 
+        "Receptor":{ 
+            "Nombre":"ASDFASDF", 
+            "Identificacion":{ "Tipo":"01", "Numero":"000114050239" }, 
+            "NombreComercial":"BurgerKing", 
+            "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, 
+            "Telefono":{
+                "CodigoPais":"506",
+                "NumTelefono":"87654321"
+            } 
+        }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1",
+                    "Mercancia":1,
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"Serv Prof ", 
+                    "PrecioUnitario":"5.500",
+                    "Impuesto":[
+                        { 
+                            "Codigo":"01", 
+                            "Tarifa":"13", 
+                            "Exoneracion":[{
+                                "TipoDocumento":"03",
+                                "NumeroDocumento":"1201",
+                                "NombreInstitucion":"Esc. Figueres Ferrer",
+                                "FechaEmision":"2018-07-15T06:45:08-06:00",
+                                "PorcentajeCompra":50
+                            }]
+                        }
+                    ]
+                },
+                { 
+                    "NumeroLinea":"2",
+                    "Mercancia":1,
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"Serv Prof ", 
+                    "PrecioUnitario":"5.500",
+                    "Impuesto":[
+                        { 
+                            "Codigo":"01", 
+                            "Tarifa":"13", 
+                            "Exoneracion":[{
+                                "TipoDocumento":"03",
+                                "NumeroDocumento":"1201",
+                                "NombreInstitucion":"Esc. Figueres Ferrer",
+                                "FechaEmision":"2018-07-15T06:45:08-06:00",
+                                "PorcentajeCompra":100
+                            }]
+                        },
+                        { 
+                            "Codigo":"02", 
+                            "Tarifa":"2", 
+                            "Exoneracion":[{
+                                "TipoDocumento":"03",
+                                "NumeroDocumento":"1201",
+                                "NombreInstitucion":"Esc. Figueres Ferrer",
+                                "FechaEmision":"2018-07-15T06:45:08-06:00",
+                                "PorcentajeCompra":100
+                            }]
+                        }                    ]
+                },
+                { 
+                    "NumeroLinea":"3",
+                    "Mercancia":1,
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"Serv Prof ", 
+                    "PrecioUnitario":"5.500"
+                }
+            ]
+        }, 
+        "ResumenFactura":{}
+    },
+    "FacturaElectronica1Linea2Impuestos":{ 
+        "Documento":{"Tipo":"01","Numero":"18"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"000114050239" }}, 
+        "Receptor":{ 
+            "Nombre":"ASDFASDF", 
+            "Identificacion":{ "Tipo":"02", "Numero":"3101725659" }, 
+            "NombreComercial":"BurgerKing", 
+            "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, 
+            "Telefono":{
+                "CodigoPais":"506",
+                "NumTelefono":"87654321"
+            },
+            "CorreoElectronico":"bryan2506@hotmail.com" }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"12345" }, 
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "UnidadMedidaComercial":"piezas", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"5", 
+                    "MontoDescuento":"1", 
+                    "NaturalezaDescuento":"contado", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" },
+                        { "Codigo":"02", "Tarifa":"2" }
+                    ]
+                } 
+            ]
+        }, 
+        "ResumenFactura":{ }, 
+        "InformacionReferencia":[
+                { 
+                    "TipoDoc":"01", 
+                    "Numero":"12345678", 
+                    "FechaEmision":"2018-05-01T01:29:12Z", 
+                    "Codigo":"05", 
+                    "Razon":"descripcion de contingencia, por que sustituye comprobante provisional" 
+                }]
+    },
+    "FacturaElectronicaConExoneracion":{ 
+        "Documento":{"Tipo":"01","Numero":"15"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"000114050239" }}, 
+        "Receptor":{ 
+            "Nombre":"ASDFASDF", 
+            "Identificacion":{ "Tipo":"02", "Numero":"3101725659" }, 
+            "NombreComercial":"BurgerKing", 
+            "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, 
+            "Telefono":{
+                "CodigoPais":"506",
+                "NumTelefono":"87654321"
+            },
+            "CorreoElectronico":"bryan2506@hotmail.com" }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"12345" }, 
+                    "Cantidad":"1", 
+                    "UnidadMedida":"Sp", 
+                    "UnidadMedidaComercial":"piezas", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"5", 
+                    "MontoDescuento":"1", 
+                    "NaturalezaDescuento":"contado", 
+                    "Impuesto":[
+                        { 
+                            "Codigo":"01", 
+                            "Tarifa":"13",
+                            "Exoneracion":{
+                                "TipoDocumento":"02",
+                                "NumeroDocumento":"123412341",
+                                "NombreInstitucion":"Ministerio Relaciones Exteriores",
+                                "FechaEmision":"2015-08-02T15:51:56-06:00",
+                                "MontoImpuesto":"2",
+                                "PorcentajeCompra":"100"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "ResumenFactura":{ }, 
+        "InformacionReferencia":[
+                { 
+                    "TipoDoc":"01", 
+                    "Numero":"12345678", 
+                    "FechaEmision":"2018-05-01T01:29:12Z", 
+                    "Codigo":"05", 
+                    "Razon":"descripcion de contingencia, por que sustituye comprobante provisional" 
+                }]
+    },
+    "NotaCredito":{
+        "Documento":{"Tipo":"02","Numero":"2"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"3101725659" }}, 
+        "Receptor":{ "Nombre":"ASDFASDF", "Identificacion":{ "Tipo":"01", "Numero":"301230123" }, "NombreComercial":"BurgerKing", "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, "Telefono":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "Fax":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "CorreoElectronico":"ASDFASDFASDFASD" }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"01" }, 
+                    "Cantidad":"1.00000", 
+                    "UnidadMedida":"Unid", 
+                    "Detalle":"ARTICULO DEMO", 
+                    "PrecioUnitario":"1000", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"Descuento Por: 100.00",
+                    "Impuesto":[
+                        {"Codigo":"01", "Tarifa":"13" } 
+                    ]
+                }
+            ]
+        }, 
+        "ResumenFactura":{ }, 
+        "InformacionReferencia":[
+            { 
+                "TipoDoc":"01", 
+                "Numero":"12345678901234567890123456789012345679801234567980", 
+                "FechaEmision":"2018-05-01T01:29:12Z", 
+                "Codigo":"03", 
+                "Razon":"por que corrige monto" 
+            }] 
+    },
+    "NotaDebito no devolucion":{
+        "Documento":{"Tipo":"03","Numero":"2"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"3101725659" }}, 
+        "Receptor":{ "Nombre":"ASDFASDF", "Identificacion":{ "Tipo":"01", "Numero":"301230123" }, "NombreComercial":"BurgerKing", "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, "Telefono":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "Fax":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "CorreoElectronico":"ASDFASDFASDFASD" }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"01" }, 
+                    "Cantidad":"1.00000", 
+                    "UnidadMedida":"Unid", 
+                    "Detalle":"ARTICULO DEMO", 
+                    "PrecioUnitario":"1000", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"Descuento Por: 100.00",
+                    "Impuesto":[
+                        {"Codigo":"01", "Tarifa":"13" } 
+                    ]
+                }
+            ]
+        }, 
+        "ResumenFactura":{ }, 
+        "InformacionReferencia":[
+            { 
+                "TipoDoc":"01", 
+                "Numero":"12345678901234567890123456789012345679801234567980", 
+                "FechaEmision":"2018-05-01T01:29:12Z", 
+                "Codigo":"01 o 03", 
+                "Razon":"por que anula documento o corrige monto" 
+            }] 
+    },
+    "NotaDebito por devolucion":{
+        "Documento":{"Tipo":"03","Numero":"2"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"3101725659" }}, 
+        "Receptor":{ "Nombre":"ASDFASDF", "Identificacion":{ "Tipo":"01", "Numero":"301230123" }, "NombreComercial":"BurgerKing", "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, "Telefono":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "Fax":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "CorreoElectronico":"ASDFASDFASDFASD" }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"12345" }, 
+                    "Cantidad":"1000.2234", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"1000.10", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"Descuento del XX%", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" }, 
+                        { "Codigo":"02", "Tarifa":"13" }
+                    ]
+                }, 
+                { 
+                    "NumeroLinea":"2", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"12345" }, 
+                    "Cantidad":"4", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"1000.10", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"Descuento del XX%", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" }, 
+                        { "Codigo":"02", "Tarifa":"13" }
+                    ]
+                }, 
+                { 
+                    "NumeroLinea":"3", 
+                    "Codigo":{ "Tipo":"04", "Codigo":"12345" }, 
+                    "Cantidad":"8", 
+                    "UnidadMedida":"Sp", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"1000.10", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"Descuento del XX%", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" }, 
+                        { "Codigo":"02", "Tarifa":"13" }
+                    ]
+                } 
+                ]
+        }, 
+        "ResumenFactura":{ }, 
+        "InformacionReferencia":[
+            { 
+                "TipoDoc":"01", 
+                "Numero":"12345678901234567890123456789012345679801234567980", 
+                "FechaEmision":"2018-05-01T01:29:12Z", 
+                "Codigo":"01 o 03", 
+                "Razon":"por que anula documento o corrige monto" 
+            }] 
+    },
+    "TiqueteElectronica":{ 
+        "Documento":{"Tipo":"01","Numero":"2"},
+        "Agencia":"001",
+        "Terminal":"00001", 
+        "Emisor":{ "Identificacion":{ "Tipo":"01", "Numero":"3101725659" }}, 
+        "Receptor":{ "Nombre":"ASDFASDF", "Identificacion":{ "Tipo":"01", "Numero":"301230123" }, "NombreComercial":"BurgerKing", "Ubicacion":{ "Provincia":"1", "Canton":"1", "Distrito":"1", "Barrio":"1", "OtrasSenas":"100 sur de.." }, "Telefono":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "Fax":{ "CodigoPais":"506", "NumTelefono":"12347896" }, "CorreoElectronico":"ASDFASDFASDFASD" }, 
+        "CondicionVenta":"01", 
+        "MedioPago":1, 
+        "DetalleServicio":{ 
+            "LineaDetalle":[ 
+                { 
+                    "NumeroLinea":"1", 
+                    "Codigo":{ "Tipo":"01", "Codigo":"12345" }, 
+                    "Cantidad":"1000.2234", 
+                    "UnidadMedida":"Sp", 
+                    "UnidadMedidaComercial":"piezas", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"1000.10", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"contado", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" }, 
+                        { "Codigo":"02", "Tarifa":"13" }
+                    ]
+                }, 
+                { 
+                    "NumeroLinea":"2", 
+                    "Codigo":{ "Tipo":"01", "Codigo":"12345" }, 
+                    "Cantidad":"4", 
+                    "UnidadMedida":"Sp", 
+                    "UnidadMedidaComercial":"piezas", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"1000.10", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"contado", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" }, 
+                        { "Codigo":"02", "Tarifa":"13" }
+                    ]
+                }, 
+                { 
+                    "NumeroLinea":"3", 
+                    "Codigo":{ "Tipo":"01", "Codigo":"12345" }, 
+                    "Cantidad":"8", 
+                    "UnidadMedida":"Sp", 
+                    "UnidadMedidaComercial":"piezas", 
+                    "Detalle":"coca colas", 
+                    "PrecioUnitario":"1000.10", 
+                    "MontoDescuento":"100.00", 
+                    "NaturalezaDescuento":"contado", 
+                    "Impuesto":[
+                        { "Codigo":"01", "Tarifa":"13" }, 
+                        { "Codigo":"02", "Tarifa":"13" }
+                    ]
+                } 
+            ]
+        }, 
+        "ResumenFactura":{ }, 
+        "InformacionReferencia":[
+            { 
+                "TipoDoc":"01", 
+                "Numero":"123456789ADSFASDF", 
+                "FechaEmision":"2018-05-01T01:29:12Z", 
+                "Codigo":"01", 
+                "Razon":"rezonable" 
+            }] 
+    }
+}
+

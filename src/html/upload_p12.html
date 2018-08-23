@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script type="text/javascript" src="populate.js" async></script>
+<style>
+                div.title {font-size: x-large;color: blue;}
+                div.subtitle { color: blue;}
+                input, textarea { width: 100%; }
+		input[type="checkbox"], input[type="radio"] { width: auto; }
+                input:invalid:not(:focus) {
+                   outline: 1px solid #f00;
+                }
+                select {
+                    font-size: .9rem;
+                    padding: 2px 5px;
+                }
+</style>
+</head>
+    <body>
+
+<form id="my-form" action="api.php?r=upload_sender" method="post" enctype="multipart/form-data">
+            <table>
+        <tr><div class="title">
+        Compañia:
+            </div>
+        </tr>
+        <tr><td><div align="right">
+                    Nombre:<br>
+                </div></td>
+            <td><div>
+                        <input type="text" name="config[Emisor][Nombre]"><br>
+                </div></td>
+        </tr>    
+        <tr><td><div>
+                    <div class="subtitle">Identificacion</div><br><div  align="right">Tipo:<br>Numero:<br></div>
+                </div></td>
+            <td><div>
+                    <br><br>
+                        <input type="text" name="config[Emisor][Identificacion][Tipo]"><br>
+                        <input type="text" name="config[Emisor][Identificacion][Numero]"><br>
+                </div></td>
+        </tr>    
+        <tr><td><div>
+                    NombreComercial:<br>
+            <td><div>
+                        <input type="text" name="config[Emisor][NombreComercial]"><br>
+                </div></td>
+        </tr>    
+        <tr><td><div>
+                    <div class="subtitle">Ubicacion</div><br>
+                    <div  align="right">
+                    Provincia:<br>
+                    Canton:<br>
+                    Distrito:<br>
+                    Barrio:<br>
+                    Otras Senas:<br></div>
+            <td><div>
+                    <br><br>
+                        <input type="text" name="config[Emisor][Ubicacion][Provincia]"><br>
+                        <input type="text" name="config[Emisor][Ubicacion][Canton]"><br>
+                        <input type="text" name="config[Emisor][Ubicacion][Distrito]"><br>
+                        <input type="text" name="config[Emisor][Ubicacion][Barrio]"><br>
+                        <input type="text" name="config[Emisor][Ubicacion][OtrasSenas]"><br>
+                </div></td>
+        </tr>    
+        <tr><td><div>
+                    <div class="subtitle">Telefono</div><br>
+                    <div  align="right">
+                    Codigo Pais:<br>
+                    Numero:<br></div>
+            <td><div>
+                    <br><br>
+                        <input type="text" name="config[Emisor][Telefono][CodigoPais]"><br>
+                        <input type="text" name="config[Emisor][Telefono][NumTelefono]"><br>
+                </div></td>
+        </tr>    
+        <tr><td><div>
+                    <div class="subtitle">Fax</div><br>
+                    <div  align="right">
+                    Codigo Pais:<br>
+                    Numero:<br></div>
+            <td><div>
+                    <br><br>
+                        <input type="text" name="config[Emisor][Fax][CodigoPais]"><br>
+                        <input type="text" name="config[Emisor][Fax][NumTelefono]"><br>
+                </div></td>
+        </tr>    
+        <tr><td><div>
+                    CorreoElectronico:<br>
+            <td><div>
+                        <input type="email" name="config[Emisor][CorreoElectronico]"><br>
+                </div></td>
+        </tr>    
+        <tr><td>
+                <div align="right"><br>user:<br>password:<br>url:<br>file </div>
+            </td>
+            <td>
+                <div><br><br><br>
+                    <input type="text" name="config[id][username_ws]" ><br>   
+                    <input type="text" name="config[id][password_ws]"><br>
+                    <input type="text" name="config[id][client_id_ws]"><br><input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload p12" name="submit"></div></td></tr>
+        
+    </table>
+</div>
+                
+</form>
+	<script src="populate.js"></script>
+	<script>
+		// your JSON object
+		// make sure that keys match the `name` of your input fields
+		var data = {
+ 
+                        "config":{
+                            "id":{
+                                "username_ws":"username_ws",
+                                "password_ws":"password_ws",
+                                "client_id_ws":"client_id_ws"
+                            },
+                            "Emisor":{
+                                "Nombre":"Bob Cat",
+                                "Identificacion":{
+                                    "Tipo":"01",
+                                    "Numero":"1234567"
+                                },
+                                "NombreComercial":"asdfaf",
+                                "Ubicacion":{
+                                    "Provincia":"01",
+                                    "Canton":"02",
+                                    "Distrito":"03",
+                                    "Barrio":"04",
+                                    "OtrasSenas":"foobar",
+                                },
+                                "Telefono":{
+                                    "CodigoPais":"506",
+                                    "NumTelefono":"1234567"
+                                },
+                                "Fax":{
+                                    "CodigoPais":"506",
+                                    "NumTelefono":"1234567"
+                                },
+                                "CorreoElectronico":"foo@bar.com"
+                            }
+                        }
+		};
+
+		// your containing element
+		var formElement = document.getElementById('my-form');
+
+		// populate the form with our JSON object
+		populate(formElement, data);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+{
+"Documento":{
+    "Tipo":"01",
+    "Numero":""
+},
+"Agencia":"01",
+"Terminal":"00001",
+			
+"FechaEmision":"",	
+"Emisor":{
+        "Identificacion":{
+                "Tipo":"",	
+                "Numero":""	
+        }
+},
+"Receptor":{
+	"Nombre":"",	  				  
+	"Identificacion":{
+		"Tipo":"",										
+		"Numero":""	
+        },
+	"NombreComercial":"",
+	"Ubicacion":{
+		"Provincia":"",	
+		"Canton":"",	
+		"Distrito":"",	
+		"Barrio":"",
+		"OtrasSenas":"" 
+	},
+	"Telefono":{
+		"CodigoPais":"",
+		"NumTelefono":"" 
+	},
+	"Fax":{
+		"CodigoPais":"", 
+		"NumTelefono":"" 
+	},
+	"CorreoElectronico":""
+},
+"CondicionVenta":{},
+"PlazoCredito":"",
+"MedioPago":"", 	
+"DetalleServicio":{
+	"LineaDetalle": { 
+		"NumeroLinea":"", 
+		"Codigo":{},
+		"Cantidad":"",  
+		"UnidadMedida":{}, 
+		"UnidadMedidaComercial":"",
+		"Detalle":"",	
+		"PrecioUnitario":{},
+		"MontoTotal":{}, 
+		"MontoDescuento":{},
+		"NaturalezaDescuento":"",
+		"SubTotal":{},			
+		"Impuesto":{
+			"Codigo":"",		
+			"Tarifa":"",		
+							
+			"Monto":"",			
+                        "Exoneracion":{
+                                "TipoDocumento":"", 
+                                "NumeroDocumento":"", 
+                                "NombreInstitucion":"", 
+                                "FechaEmision":"",	
+                                "MontoImpuesto":"",  
+                                "PorcentajeCompra":"" 
+                        } 
+		},
+		"MontoTotalLinea":{}	
+	},
+	"LineaDetalle": { 
+		"NumeroLinea":"", 
+		"Codigo":{},
+		"Cantidad":"",  
+		"UnidadMedida":{}, 
+		"UnidadMedidaComercial":"",
+		"Detalle":"",	
+		"PrecioUnitario":{},
+		"MontoTotal":{}, 
+		"MontoDescuento":{},
+		"NaturalezaDescuento":"",
+		"SubTotal":{},			
+		"Impuesto":{
+			"Codigo":"",		
+			"Tarifa":"",		
+							
+			"Monto":"",			
+                        "Exoneracion":{
+                                "TipoDocumento":"", 
+                                "NumeroDocumento":"", 
+                                "NombreInstitucion":"", 
+                                "FechaEmision":"",	
+                                "MontoImpuesto":"",  
+                                "PorcentajeCompra":"" 
+                        } 
+		},
+		"Exoneracion":{
+			"TipoDocumento":"", 
+			"NumeroDocumento":"", 
+			"NombreInstitucion":"", 
+			"FechaEmision":"",	
+			"MontoImpuesto":"",  
+			"PorcentajeCompra":"" 
+		}, 
+		"MontoTotalLinea":{}	
+	}
+
+},
+"ResumenFactura":{
+	"CodigoMoneda":"",
+	"TipoCambio":{},
+	"TotalServGravados":{},	
+	"TotalServExentos":{},	
+	"TotalMercanciasGravadas":{},
+	"TotalMercanciasExentas":{},
+        "TotalGravado":{},
+        "TotalExento":{},
+        "TotalVenta":{},	 
+        "TotalDescuentos":{},
+        "TotalVentaNeta":{}, 
+        "TotalImpuesto":{},
+        "TotalComprobante":{} 
+},
+"InformacionReferencia":{
+	"TipoDoc":"",	
+	"Numero":"",	
+	"FechaEmision":"",
+	"Codigo":"",	
+	"Razon":""		
+},
+"Otros":{
+	"OtroTexto":"", 
+	"OtroContenido":""
+}
+}
